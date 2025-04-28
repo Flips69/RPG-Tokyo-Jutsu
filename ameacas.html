@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ameaças - F.A.N.T.A.S.M.A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ameacas.css"> <!-- Vamos atualizar esse CSS -->
+</head>
+<body>
+
+  <!-- Botão para abrir o menu -->
+  <div id="menu-button" onclick="toggleMenu()">☰</div>
+
+  <!-- Menu lateral -->
+  <nav id="side-menu">
+    <ul>
+      <li><a href="fantasma.html">Início</a></li>
+      <li><a href="agentes/agentes.html">Agentes</a></li>
+      <li><a href="ameacas.html">Ameaças</a></li>
+      <li><a href="quinques.html">Quinques</a></li>
+      <li><a href="relatorios.html">Relatórios</a></li>
+      <li><a href="confidencial.html">Confidencial</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="glitch">Relatório de Ameaças</h1>
+  <p class="intro">Compilado pela F.A.N.T.A.S.M.A - acesso restrito autorizado.</p>
+
+  <!-- Cartão de ameaça -->
+  <div class="ameaca-card">
+    <h2>Nome da Ameaça</h2>
+    <img src="img/exemplo.jpg" alt="Imagem da ameaça">
+    <div class="ameaca-dados">
+      <p><strong>Classificação:</strong> [Classe Ex: Sombra]</p>
+      <p><strong>Status:</strong> [Ex: Ativa]</p>
+      <p><strong>Nível de Ameaça:</strong> [Ex: Extremo]</p>
+    </div>
+    <div class="ameaca-descricao">
+      <p><strong>Descrição:</strong> [Escreva aqui a descrição completa.]</p>
+      <p><strong>Relatos Notáveis:</strong> [Espaço para registros passados]</p>
+    </div>
+  </div>
+
+  <!-- Clone para outras ameaças -->
+
+  <footer>
+    &copy; 2025 F.A.N.T.A.S.M.A. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("side-menu");
+      menu.style.left = (menu.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+</body>
+</html>

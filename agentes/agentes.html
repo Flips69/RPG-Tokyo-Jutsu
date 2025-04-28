@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentes - F.A.N.T.A.S.M.A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/agentes.css">
+</head>
+
+<body>
+
+  <!-- Botão para abrir o menu -->
+  <div id="menu-button" onclick="toggleMenu()">☰</div>
+
+  <!-- Menu lateral -->
+  <nav id="side-menu">
+    <ul>
+      <li><a href="../fantasma.html">Início</a></li>
+      <li><a href="../agentes/agentes.html">Agentes</a></li>
+      <li><a href="../ameacas.html">Ameaças</a></li>
+      <li><a href="../quinques.html">Quinques</a></li>
+      <li><a href="../relatorios.html">Relatórios</a></li>
+      <li><a href="../confidencial.html">Confidencial</a></li>
+    </ul>
+  </nav>
+
+  <h1>Agentes F.A.N.T.A.S.M.A</h1>
+
+  <p>Os agentes da <strong>F.A.N.T.A.S.M.A</strong> são a força de combate especializada no extermínio de Doppelgangers.
+    Eles passam por um rigoroso treinamento e têm habilidades únicas para lidar com as ameaças que surgem no mundo. A
+    organização conta com uma hierarquia bem definida, com agentes de diferentes níveis de experiência e
+    especializações.</p>
+
+  <p>A seguir estão os tipos de agentes e algumas informações importantes sobre suas habilidades e funções dentro da
+    organização.</p>
+    
+    <!-- Botões de filtro -->
+    <div class="filter-buttons">
+      <button onclick="filtrarAgentes('todos')">Todos</button>
+      <button onclick="filtrarAgentes('iniciantes')">Iniciantes</button>
+      <button onclick="filtrarAgentes('intermediarios')">Intermediários</button>
+      <button onclick="filtrarAgentes('avancados')">Avançados</button>
+      <button onclick="filtrarAgentes('elite')">Elite</button>
+    </div>
+    
+    <!-- Campo de busca -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar agente..." onkeyup="filterAgents()">
+    </div>
+
+    <h2>Agentes Iniciantes</h2>
+    <div class="agents-container categoria-iniciantes">    
+    <a href="../agentes/iniciantes/agente_iniciante1.html" class="agent-link">
+      <div class="agent">
+        <img src="img/" alt="Agente Iniciante 1">
+        <h3>Agente Iniciante 1</h3>
+        <p>Este agente está em treinamento, com pouca experiência de combate, e suas habilidades ainda estão sendo
+          moldadas.</p>
+      </div>
+    </a>
+    <a href="../agentes/iniciantes/agente_iniciante2.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_iniciante2.png" alt="Agente Iniciante 2">
+        <h3>Agente Iniciante 2</h3>
+        <p>Outro recruta em fase de adaptação, especializado em missões de suporte e observação de Doppelgangers.</p>
+      </div>
+    </a>
+    <a href="../agentes/iniciantes/agente_iniciante3.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_iniciante3.png" alt="Agente Iniciante 3">
+        <h3>Agente Iniciante 3</h3>
+        <p>Tem um domínio inicial sobre Quinques, sendo utilizado em missões secundárias.</p>
+      </div>
+    </a>
+    <a href="../agentes/iniciantes/agente_iniciante4.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_iniciante4.png" alt="Agente Iniciante 4">
+        <h3>Agente Iniciante 4</h3>
+        <p>Iniciante com habilidades em manipulação de energia amaldiçoada, em treinamento para missões de campo.</p>
+      </div>
+    </a>
+    <a href="../agentes/iniciantes/agente_iniciante5.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_iniciante5.png" alt="Agente Iniciante 5">
+        <h3>Agente Iniciante 5</h3>
+        <p>Agente com grande potencial, mas ainda está em fase de adaptação a missões de combate e interação com
+          Doppelgangers.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Agentes Intermediários -->
+  <h2>Agentes Intermediários</h2>
+<div class="agents-container categoria-intermediarios">
+    <a href="../agentes/intermediarios/agente_intermediario1.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_intermediario1.png" alt="Agente Intermediário 1">
+        <h3>Agente Intermediário 1</h3>
+        <p>Já demonstrou habilidades excepcionais em combate e é especialista no uso de Quinques de médio porte.</p>
+      </div>
+    </a>
+    <a href="../agentes/intermediarios/agente_intermediario2.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_intermediario2.png" alt="Agente Intermediário 2">
+        <h3>Agente Intermediário 2</h3>
+        <p>Com experiência em missões de risco moderado, esse agente tem um bom controle sobre suas habilidades.</p>
+      </div>
+    </a>
+    <a href="../agentes/intermediarios/agente_intermediario3.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_intermediario3.png" alt="Agente Intermediário 3">
+        <h3>Agente Intermediário 3</h3>
+        <p>Agente com uma forte capacidade estratégica, ideal para missões de contenção de Doppelgangers mais poderosos.
+        </p>
+      </div>
+    </a>
+    <a href="../agentes/intermediarios/agente_intermediario4.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_intermediario4.png" alt="Agente Intermediário 4">
+        <h3>Agente Intermediário 4</h3>
+        <p>Com grande visão tática, este agente é especializado em missões de resgate e contenção.</p>
+      </div>
+    </a>
+    <a href="../agentes/intermediarios/agente_intermediario5.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_intermediario5.png" alt="Agente Intermediário 5">
+        <h3>Agente Intermediário 5</h3>
+        <p>Capaz de manipular energia amaldiçoada com maestria, é usado em missões onde a anulação espiritual é
+          necessária.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Agentes Avançados -->
+  <h2>Agentes Avançados</h2>
+<div class="agents-container categoria-avancados">
+    <a href="../agentes/avancados/agente_avancado1.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_avancado1.png" alt="Agente Avançado 1">
+        <h3>Agente Avançado 1</h3>
+        <p>Mestre no uso de Quinques de grande porte, responsável por missões extremamente perigosas e com alto risco de
+          vida.</p>
+      </div>
+    </a>
+    <a href="../agentes/avancados/agente_avancado2.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_avancado2.png" alt="Agente Avançado 2">
+        <h3>Agente Avançado 2</h3>
+        <p>Com grande experiência em combate, este agente é especialista em enfrentar Doppelgangers raros e difíceis de
+          controlar.</p>
+      </div>
+    </a>
+    <a href="../agentes/avancados/agente_avancado3.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_avancado3.png" alt="Agente Avançado 3">
+        <h3>Agente Avançado 3</h3>
+        <p>Reconhecido por sua habilidade em situações extremas e táticas de combate em cenários críticos.</p>
+      </div>
+    </a>
+    <a href="../agentes/avancados/agente_avancado4.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_avancado4.png" alt="Agente Avançado 4">
+        <h3>Agente Avançado 4</h3>
+        <p>Especialista em missões de alto sigilo, utiliza tecnologia experimental para neutralizar ameaças antes que
+          elas se manifestem por completo.</p>
+      </div>
+    </a>
+    <a href="../agentes/avancados/agente_avancado5.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_avancado5.png" alt="Agente Avançado 5">
+        <h3>Agente Avançado 5</h3>
+        <p>Líder de esquadrões táticos, é frequentemente enviado para zonas classificadas como "ponto zero" para conter
+          eventos paranormais em larga escala.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Agentes de Elite -->
+  <h2>Agentes de Elite</h2>
+<div class="agents-container categoria-elite">
+    <a href="../agentes/elite/agente_elite1.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_elite1.png" alt="Agente de Elite 1">
+        <h3>Agente de Elite 1</h3>
+        <p>Com habilidades incomparáveis e um histórico impressionante de missões bem-sucedidas, este agente lidera
+          operações de alto nível.</p>
+      </div>
+    </a>
+    <a href="../agentes/elite/agente_elite2.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_elite2.png" alt="Agente de Elite 2">
+        <h3>Agente de Elite 2</h3>
+        <p>Um dos agentes mais temidos da organização, capaz de derrotar qualquer Doppelganger e liderar operações
+          secretas.</p>
+      </div>
+    </a>
+    <a href="../agentes/elite/agente_elite3.html" class="agent-link">
+      <div class="agent">
+        <img src="img/agent_elite3.png" alt="Agente de Elite 3">
+        <h3>Agente de Elite 3</h3>
+        <p>Capaz de prever os movimentos do inimigo com base em análise espiritual, é considerado um "oráculo de
+          combate".</p>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 F.A.N.T.A.S.M.A. Todos os direitos reservados.
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("side-menu");
+      if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+      } else {
+        menu.style.left = "0px";
+      }
+    }
+  
+    function filterAgents() {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toLowerCase();
+      const agents = document.querySelectorAll(".agent-link");
+  
+      agents.forEach(agent => {
+        const name = agent.querySelector("h3").textContent.toLowerCase();
+        if (name.includes(filter)) {
+          agent.style.display = "block";
+        } else {
+          agent.style.display = "none";
+        }
+      });
+    }
+  
+    function filtrarAgentes(categoria) {
+  const todasCategorias = document.querySelectorAll('.agents-container');
+
+  todasCategorias.forEach(div => {
+    if (categoria === 'todos') {
+      div.classList.remove('oculto');
+    } else if (div.classList.contains(`categoria-${categoria}`)) {
+      div.classList.remove('oculto');
+    } else {
+      div.classList.add('oculto');
+    }
+  });
+}
+  </script>
+  
+
+</body>
+
+</html>

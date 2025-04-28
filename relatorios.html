@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios - F.A.N.T.A.S.M.A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/relatorios.css"> <!-- CSS importado -->
+</head>
+<body>
+
+  <!-- Botão para abrir o menu -->
+<div id="menu-button" onclick="toggleMenu()">☰</div>
+
+<!-- Menu lateral -->
+<nav id="side-menu">
+  <ul>
+    <li><a href="fantasma.html">Início</a></li>
+    <li><a href="agentes/agentes.html">Agentes</a></li>
+    <li><a href="ameacas.html">Ameaças</a></li>
+    <li><a href="quinques.html">Quinques</a></li>
+    <li><a href="relatorios.html">Relatórios</a></li>
+    <li><a href="confidencial.html">Confidencial</a></li>
+  </ul>
+</nav>
+
+  <h1>Relatórios de Missões</h1>
+
+  <p>Os relatórios abaixo contêm informações sobre missões realizadas pela F.A.N.T.A.S.M.A. Cada relatório apresenta detalhes sobre a missão, agentes envolvidos e a situação enfrentada durante o combate com Doppelgangers ou outras entidades anômalas.</p>
+
+  <div class="relatorio">
+    <h2>Relatório de Missão 1: Extermínio de Doppelganger - Setor Alpha</h2>
+    <p><strong>Data:</strong> 12/04/2025</p>
+    <p><strong>Agentes Envolvidos:</strong> Agente Iniciante 1, Agente Intermediário 2</p>
+    <p><strong>Descrição:</strong> A missão envolveu o extermínio de um Doppelganger de tipo agressivo que se infiltrou na zona urbana. A operação foi bem-sucedida, com o Doppelganger sendo neutralizado após uma luta intensa.</p>
+  </div>
+
+  <div class="relatorio">
+    <h2>Relatório de Missão 2: Combate a Doppelganger - Setor Beta</h2>
+    <p><strong>Data:</strong> 15/04/2025</p>
+    <p><strong>Agentes Envolvidos:</strong> Agente Intermediário 1, Agente Avançado 3</p>
+    <p><strong>Descrição:</strong> Missão de resgate e contenção de Doppelganger que havia sequestrado civis. A missão foi realizada com precisão, mas com algumas baixas devido à natureza hostil da criatura.</p>
+  </div>
+
+  <div class="relatorio">
+    <h2>Relatório de Missão 3: Investigação de Ameaça Anômala - Setor Gamma</h2>
+    <p><strong>Data:</strong> 20/04/2025</p>
+    <p><strong>Agentes Envolvidos:</strong> Agente Intermediário 4, Agente de Elite 1</p>
+    <p><strong>Descrição:</strong> Investigação de um possível Doppelganger que estava operando como uma figura política. A operação foi discretamente executada, resultando na captura da entidade para investigação mais aprofundada.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 F.A.N.T.A.S.M.A. Todos os direitos reservados.
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("side-menu");
+      if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+      } else {
+        menu.style.left = "0px";
+      }
+    }
+  </script>
+  
+</body>
+</html>

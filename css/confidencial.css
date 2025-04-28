@@ -1,0 +1,302 @@
+/* ========== Fonte e layout geral ========== */
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ========== Título principal com efeito glitch ========== */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #e0e0e0;
+  text-shadow: 1px 0 red, -1px 0 blue;
+}
+
+@keyframes glitch {
+  0%   { text-shadow: 1px 0 red, -1px 0 blue; }
+  20%  { text-shadow: -1px 0 red, 1px 0 blue; }
+  40%  { text-shadow: 1px 1px red, -1px -1px blue; }
+  60%  { text-shadow: -1px -1px red, 1px 1px blue; }
+  80%  { text-shadow: 0 0 red, 0 0 blue; }
+  100% { text-shadow: 1px 0 red, -1px 0 blue; }
+}
+
+h1:hover {
+  animation: glitch 0.5s infinite;
+}
+
+/* ========== Parágrafos ========== */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* ========== Seções confidenciais (cards clicáveis) ========== */
+.confidential-section {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-left: 5px solid crimson;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(136, 0, 0, 0.301);
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.confidential-section:hover {
+  background-color: #222;
+  transform: scale(1.015);
+  box-shadow: 0 0 15px rgba(136, 0, 0, 0.3);
+}
+
+/* ========== Título das seções confidenciais ========== */
+.confidential-section h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: crimson;
+  text-shadow: 0 0 3px darkred;
+}
+
+/* ========== Rodapé ========== */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ========== Botão do menu (☰) ========== */
+#menu-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  z-index: 1001;
+  box-shadow: 0 0 10px rgba(136, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+#menu-button:hover {
+  background-color: #222;
+}
+
+/* ========== Menu lateral ========== */
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: left 0.4s ease, box-shadow 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#side-menu ul li {
+  padding: 10px 20px;
+}
+
+#side-menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s, padding-left 0.2s;
+}
+
+#side-menu ul li a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+  padding-left: 25px;
+}
+
+/* ========== Tela de Bloqueio Inicial ========== */
+#lock-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lock-box {
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(136, 0, 0, 0.3);
+  text-align: center;
+  color: #e0e0e0;
+  max-width: 300px;
+  width: 100%;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.lock-box input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.lock-box button {
+  padding: 0.5rem 1rem;
+  background-color: crimson;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lock-box button:hover {
+  background-color: darkred;
+}
+
+#error-msg {
+  color: #ff6666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* ========== Popup de senha (modal alternativo) ========== */
+#password-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#popup-content {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px crimson;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  max-width: 300px;
+  width: 90%;
+}
+
+#password-input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #222;
+  color: white;
+  font-family: inherit;
+}
+
+#popup-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: crimson;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#error-message {
+  margin-top: 10px;
+  color: red;
+  font-size: 0.9rem;
+}
+
+@keyframes glitch-bg {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    opacity: 0.9;
+  }
+  40% {
+    transform: translate(2px, -1px);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-1px, 1px);
+    opacity: 0.95;
+  }
+  80% {
+    transform: translate(1px, -2px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+#popup-content {
+  animation: glitch-bg 0.5s infinite;
+}
+
+@keyframes glitch-colors {
+  0% {
+    text-shadow: 1px 0 red, -1px 0 blue;
+  }
+  20% {
+    text-shadow: -2px 0 red, 2px 0 blue;
+  }
+  40% {
+    text-shadow: 2px 1px red, -2px -1px blue;
+  }
+  60% {
+    text-shadow: -1px -2px red, 1px 2px blue;
+  }
+  80% {
+    text-shadow: 0 0 red, 0 0 blue;
+  }
+  100% {
+    text-shadow: 1px 0 red, -1px 0 blue;
+  }
+}
+
+#popup-content h2,
+#popup-content label,
+#popup-content input::placeholder {
+  animation: glitch-colors 0.7s infinite;
+}
+
+
+

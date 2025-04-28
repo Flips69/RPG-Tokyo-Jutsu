@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armas Quinque - F.A.N.T.A.S.M.A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/quinques.css"> <!-- CSS importado -->
+</head>
+<body>
+
+  <!-- Botão para abrir o menu -->
+<div id="menu-button" onclick="toggleMenu()">☰</div>
+
+<!-- Menu lateral -->
+<nav id="side-menu">
+  <ul>
+    <li><a href="fantasma.html">Início</a></li>
+    <li><a href="agentes/agentes.html">Agentes</a></li>
+    <li><a href="ameacas.html">Ameaças</a></li>
+    <li><a href="quinques.html">Quinques</a></li>
+    <li><a href="relatorios.html">Relatórios</a></li>
+    <li><a href="confidencial.html">Confidencial</a></li>
+  </ul>
+</nav>
+
+  <h1>Armas Quinque</h1>
+
+  <p>As <strong>Quinques</strong> são armas feitas a partir das células modificadas de um Ghouls abatido, aproveitando sua estrutura de kagune ou energia amaldiçoada. Cada arma possui um formato e capacidade diferente, dependendo do tipo de criatura de onde foi extraída. Elas são criadas e manipuladas por agentes especializados da F.A.N.T.A.S.M.A e usadas exclusivamente em combate contra entidades anômalas.</p>
+
+  <div class="quinque">
+    <h2>Yamato-Type</h2>
+    <img src="img/yamato.png" alt="Yamato-Type">
+    <p>Uma espada de duas mãos com design tradicional japonês, feita para agentes que preferem confrontos diretos e letais. O Yamato-Type é forjado a partir de kagunes tipo rinkaku, garantindo resistência, leveza e poder de corte extremo. Sua lâmina vibra com energia amaldiçoada, capaz de cortar a carne e a essência espiritual de Doppelgangers.</p>
+  </div>
+
+  <div class="quinque">
+    <h2>Yukimura 1/2</h2>
+    <img src="img/yukimura.png" alt="Yukimura 1/2">
+    <p>Uma espada de lâmina espiral que gira sutilmente ao ser empunhada, criando um efeito de perfuração contínua. Produzida a partir de kagunes bikaku, é ideal para atravessar defesas espessas. Muito usada por agentes veteranos em missões de extermínio rápido e silencioso, seu núcleo abriga um canal de energia que aumenta sua eficiência.</p>
+  </div>
+
+  <div class="quinque">
+    <h2>Doujima</h2>
+    <img src="img/doujima.png" alt="Doujima">
+    <p>Uma pistola de alta potência que dispara projéteis impregnados com energia amaldiçoada. Ao contrário de outras armas de fogo comuns, a Doujima possui um carregador especial que utiliza fragmentos cristalizados de kagunes tipo koukaku. Ideal para combate à distância e contenção de alvos velozes, ela oferece potência concentrada sem perder mobilidade.</p>
+  </div>
+
+  <div class="quinque">
+    <h2>Jason</h2>
+    <img src="img/jason.png" alt="Jason">
+    <p>Uma serra elétrica forjada a partir de uma kagune bikaku extremamente densa. A Jason é uma arma brutal, usada para interrogatórios ou missões onde a intimidação é essencial. Seu motor é alimentado por energia amaldiçoada e a lâmina possui dentes retráteis que giram em alta velocidade, rasgando carne, ossos e até escudos espirituais.</p>
+  </div>
+
+  <p style="font-style: italic; color: #aaa; text-align:center;">"O inimigo nos deu as armas... agora usamos contra eles."</p>
+
+  <footer>
+    &copy; 2025 F.A.N.T.A.S.M.A. Todos os direitos reservados.
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("side-menu");
+      if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+      } else {
+        menu.style.left = "0px";
+      }
+    }
+  </script>
+  
+</body>
+</html>

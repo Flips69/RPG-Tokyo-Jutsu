@@ -1,0 +1,91 @@
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #ff8c00;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .relatorio {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+  }
+  
+  .relatorio:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  #menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    z-index: 1001;
+  }
+  
+  #side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100%;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+  
+  #side-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #side-menu ul li {
+    padding: 10px 20px;
+  }
+  
+  #side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #side-menu ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  

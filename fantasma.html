@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.A.N.T.A.S.M.A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"> <!-- CSS importado -->
+</head>
+<body>
+
+  <!-- Botão para abrir o menu -->
+<div id="menu-button" onclick="toggleMenu()">☰</div>
+
+<!-- Menu lateral -->
+<nav id="side-menu">
+  <ul>
+    <li><a href="fantasma.html">Início</a></li>
+    <li><a href="agentes/agentes.html">Agentes</a></li>
+    <li><a href="ameacas.html">Ameaças</a></li>
+    <li><a href="quinques.html">Quinques</a></li>
+    <li><a href="relatorios.html">Relatórios</a></li>
+    <li><a href="confidencial.html">Confidencial</a></li>
+  </ul>
+</nav>
+
+  <header>
+    <img class="logo" src="img/fantasma.jpg" alt="Brasão da FANTASMA">
+    <h1>F.A.N.T.A.S.M.A</h1>
+    <p class="slogan">"Nós caçamos o que não pode ser visto."</p>
+  </header>
+
+  <nav>
+    <a class="nav-btn" href="agentes/agentes.html">Agentes Registrados</a>
+    <a class="nav-btn" href="relatorios.html">Relatórios de Missão</a>
+    <a class="nav-btn" href="ameacas.html">Níveis de Ameaça</a>
+    <a class="nav-btn" href="quinques.html">Armas Quinque</a>
+    <a class="nav-btn" href="confidencial.html">Arquivo Confidencial</a>
+  </nav>
+
+  <footer>
+    &copy; 2025 Força de Ação Nacional para Tratamento de Anomalias Sombrias, Maldições e Ameaças. Todos os direitos reservados.
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("side-menu");
+      if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+      } else {
+        menu.style.left = "0px";
+      }
+    }
+  </script>
+  
+</body>
+</html>
